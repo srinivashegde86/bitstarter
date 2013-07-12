@@ -64,7 +64,7 @@ var clone = function(fn) {
     return fn.bind({});
 };
 
-var buildfn(htmlfile) {
+var buildfn = function(htmlfile) {
     var response2html = function(result, response) {
         fs.writeFileSync(htmlfile, result);
     };
